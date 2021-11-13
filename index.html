@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- for Resposive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Wow js library-->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Main Css File -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+</html>
+<body>
+    <!-- to_Top -->
+    <a id="to_Top" href="#" role="button" class="btn  p-2  fw-bold"><i class="fas fa-angle-up"></i></a>
+    
+    <!--Start Side Menu -->
+    <section id="sideMenu">
+        <div id="mainSide" class="main-side">
+            <div id="menuBody" class="meun-body">
+                <nav class="menu-body-head">
+                    <ul class=" list-unstyled">
+                        <li><a id="now_playing" class="Api wow bounceInUp" href="#NowPlaying">Now Playing</a></li>
+                        <li><a id="popular" class="Api wow bounceInUp " href="#Popular">Popular</a></li>
+                        <li><a id="top_rated" class="Api wow bounceInUp " href="#TopRated">Top Rated</a></li>
+                        <li><a id="trending" class="Api wow bounceInUp " href="#Trending">Trending</a></li>
+                        <li><a id="upcoming" class="Api wow bounceInUp " href="#Upcoming">Upcoming</a></li>
+                        <li><a  class=" wow bounceInUp " href="#ContactUs">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="menu-body-body">
+                    <div class="social-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <footer>
+                        <p>Copyright Â&copy; 2019 All Rights Reserved.</p>
+                    </footer>
+                </div>
+                
+            </div>
+            <div class="menu-head">
+                <img src="imgs/logo.png" alt="Logo Image">
+                <i id="bar" class="fas fa-align-justify "></i>
+                <i id="close" class="fas fa-times dis-none"></i>
+                <div class="social">
+                    <i class="fas fa-globe"></i>
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Side Menu -->
+
+    <!--Start Moveidb Api -->
+    <section id="moveiDb" class="py-5">
+        <div class="container">
+
+            <div id="SearchInput" class="row g-4">
+                <div class="col-md-6">
+                    <div class="inputs">
+                        <input id="searchByWord" class="form-control" type="text" placeholder="Get Movies By Word....">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="inputs  ">
+                        <input id="searchInViewed" class="form-control" type="text" placeholder="Search....">
+                    </div>
+                </div>
+            </div>
+
+            <div id="allMovies" class="row g-4"></div>
+            
+        </div>
+
+    </section>
+    <!--End Moveidb Api -->
+
+    <!--Start Countact Us -->
+    <section id="ContactUs" class="py-5">
+        <div class="container">
+            <h2>Contact US</h2>
+            <form id="form">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="inputs ">
+                            <input id="userName" class="form-control my-2" type="text" placeholder="Your Name">
+                            <div id="alertName" class="alert alert-danger d-none">
+                                Your Name is required .
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="inputs ">
+                            <input id="userEmail" class="form-control my-2" type="email" placeholder="Your Email">
+                            <div id="alertEmail" class="alert alert-danger d-none">
+                                Your Email is required .
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="inputs ">
+                            <input id="userPhone" class="form-control my-2" type="text" placeholder="Your Phone">
+                            <div id="alertPhone" class="alert alert-danger d-none">
+                                Your Phone is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="inputs ">
+                            <textarea id="userMessage" class="form-control my-2" type="text" placeholder="Your Message"></textarea>
+                            <div id="alertMessage" class="alert alert-danger d-none">
+                                Your Message is required .
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button id="mainBtn" class="btn btn-outline-danger mt-3 rounded-0" disabled>Submit</button>
+            </form>
+        </div>
+    </section>
+    <!--End ountact Us -->
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        // new WOW().init();
+    </script>
+</body>
