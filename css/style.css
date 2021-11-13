@@ -1,0 +1,235 @@
+/* Component */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #000000f2;
+}
+.dis-none{
+    display: none;
+}
+.inputs input,textarea{
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #fff !important;
+    color: #fff !important;
+}
+.inputs input::placeholder ,textarea::placeholder{
+    text-align: center;
+}
+.inputs input:focus ,textarea:focus{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+/*End Component */
+/* Start Side Menu */
+#sideMenu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    z-index: 99999999999999;
+}
+
+.main-side{
+    display: flex;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+.meun-body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:1.5rem 0.5rem 1.5rem 1.4rem ;
+}
+nav a{
+    text-decoration: none;
+    color: #f9f6f6;
+    display: block;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+ul a:hover{
+    color: #ff655c;
+    cursor: pointer;
+}
+ul > li:nth-of-type(1) a{
+    animation-duration: 0.8s ;
+}
+ul > li:nth-of-type(2) a{
+    animation-duration: 1s;
+}
+ul > li:nth-of-type(3) a{
+    animation-duration: 1.2s;
+}
+ul > li:nth-of-type(4) a{
+    animation-duration: 1.4s;
+}
+ul > li:nth-of-type(5) a{
+    animation-duration: 1.6s;
+}
+ul > li:nth-of-type(6) a{
+    animation-duration: 1.8s;
+}
+.social-media{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.social-media i{
+    margin-right: 0.8rem;
+    transition: color 0.3s;
+}
+.social-media i:hover{
+    color: #ff655c;
+    cursor: pointer;
+}
+footer p{
+    line-height: 1.8;
+    color: #999;
+}
+.menu-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.8rem;
+    background-color: #fff;
+    color: #000;
+}
+ul{
+    overflow: hidden;
+}
+.menu-head img{
+    width: 30px ;
+    cursor: pointer;
+}
+.menu-head > i{
+    font-size: 22px;
+    cursor: pointer;
+}
+.menu-head .social{
+    text-align: center;
+}
+.menu-head .social i{
+    margin: 0.5rem;
+    cursor: pointer;
+}
+/* End Side Menu */
+
+/* Start Moveidb Api*/
+#SearchInput{
+    margin-bottom: 4rem;
+}
+.moveiImg{
+    position: relative;
+    overflow: hidden;
+}
+.moveiImg:hover .movei-Info{
+    top: 0;
+}
+.moveiImg img{
+    border-radius:3px;
+    width: 100%;
+}
+.moveiImg .movei-Info {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    transition: all 1s;
+}
+h2.title{
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+p.overview{
+    text-align: center;
+}
+.movei-Info span{
+    text-align: center;
+}
+span.rate{
+    margin-bottom: .5rem;
+    display: block;
+
+}
+@media (min-width:993px) {
+    h2.title{
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    p.overview{
+        font-size: 0.9rem;
+    }
+    .movei-Info span{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:1200px) and (min-width:768px) {
+    h2.title{
+        font-size: 1.1rem;
+    }
+    p.overview{
+        display: none;
+    }
+    .movei-Info span{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:767px) and (min-width:576px) {
+    h2.title{
+        font-size: 1.5rem;
+    }
+    p.overview{
+        display: none;
+    }
+    .movei-Info span{
+        font-size: 1rem;
+    }
+}
+@media (max-width:575px) {
+    h2.title{
+        font-size: 1.5rem;
+    }
+    .movei-Info span{
+        font-size: 1rem;
+    }
+}
+/* End Moveidb Api */
+
+
+/* Start Countact Us */
+
+#ContactUs h2{
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+/* End Countact Us */
+
+#to_Top{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 9999999999999999;
+    background-color: #eee;
+    color: #000;
+    border: none !important;
+    box-shadow: none !important;
+}
+#to_Top:hover{
+    background-color: #ccc;
+}
